@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# # Model files (large binary files)
+# *.pkl
+# *.h5
+# *.model
+
+# Environment variables
+.env
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Flask specific
+instance/
+.webassets-cache
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local development settings
+local_settings.py
+
+# Jupyter Notebook
+.ipynb_checkpoints

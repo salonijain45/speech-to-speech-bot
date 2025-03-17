@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Speech Bot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Speech to Speech Bot</h1>
+        
+        <div class="chat-container">
+            <div id="chat-history"></div>
+            <div class="speech-indicator" id="speech-indicator">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="start-btn" class="btn">Start Speaking</button>
+            <button id="stop-btn" class="btn" disabled>Stop</button>
+            <div id="status" class="status">Ready</div>
+        </div>
+
+        <div class="tone-info">
+            <p>Detected Tone: <span id="detected-tone">None</span></p>
+        </div>
+        
+        <div class="wave-container" id="wave-container">
+            <div class="wave"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
